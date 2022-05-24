@@ -405,7 +405,7 @@ const Home = (props: HomeProps) => {
 
             for (
                 let index = 0;
-                index < signedTransactions.length;
+                index < 2;
                 index++
             ) {
                 const tx = signedTransactions[index];

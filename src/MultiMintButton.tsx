@@ -192,7 +192,7 @@ export const MultiMintButton = ({
                         "UNAVAILABLE"
                     ))}
                 </CTAButton>
-                <Minus
+                {/* <Minus
                     disabled={
                         clicked ||
                         candyMachine?.state.isSoldOut ||
@@ -218,7 +218,7 @@ export const MultiMintButton = ({
                     className="mint-qty"
                     step={1}
                     min={1}
-                    max={10}
+                    max={2}
                     value={mintCount}
                     onChange={(e) => updateMintCount((e.target as any))}
                 />
@@ -233,7 +233,7 @@ export const MultiMintButton = ({
                         isVerifying
                     }
                     onClick={() => incrementValue()}
-                >+</Plus>
+                >+</Plus> */}
             </div>
             {!candyMachine?.state.isSoldOut && !isSoldOut && isActive &&
               <h3>Total estimated cost (Solana fees included) : {totalCost} SOL</h3>}
